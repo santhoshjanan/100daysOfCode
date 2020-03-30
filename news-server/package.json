@@ -1,0 +1,23 @@
+{
+    "name": "news-server",
+    "version": "1.0.0",
+    "description": "News aggregation Server",
+    "main": "src/index.js",
+    "scripts": {
+        "watch": "nodemon src/index.js"
+    },
+    "author": "Santhosh Janardhanan",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "helmet": "^3.22.0",
+        "lodash": "^4.17.15"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
