@@ -24,7 +24,6 @@ app.use(
 // Middleware
 // Using helmet per best practice: https://expressjs.com/en/advanced/best-practice-security.html#use-helmet
 app.use(helmet())
-// tslint:disable-next-line:max-line-length
 // Using gzip compression per best practice: https://expressjs.com/en/advanced/best-practice-performance.html#use-gzip-compression
 
 app.use(function(req, res, next) {
