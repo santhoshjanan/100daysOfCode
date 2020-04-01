@@ -38,9 +38,14 @@ export default {
             switch (this.newssource.newssource) {
                 case 'top-headline':
                     this.sourceurl = '/news/topheadlines'
+                    break
+                case 'general':
+                    this.sourceurl = '/news'
+                    break
+
                 default:
-                    this.sourceurl =
-                        '/news?category=' + this.newssource.newssource
+                    this.sourceurl = '/news?q=' + this.newssource.newssource
+                    break
             }
             axios
                 .get(this.sourceurl)
