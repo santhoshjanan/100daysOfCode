@@ -9,7 +9,7 @@
             text-color="#fff"
             active-text-color="#ffd04b"
         >
-            <el-menu-item index="TopHeadlines">Top Headlines</el-menu-item>
+            <el-menu-item index="top-headline">Top Headlines</el-menu-item>
             <el-submenu index="2">
                 <template slot="title">Categories</template>
                 <el-menu-item
@@ -25,6 +25,7 @@
 
 <script>
 import axios from 'axios'
+import { eventBus } from '@/main'
 
 export default {
     name: 'NavMenuBar',
@@ -40,13 +41,14 @@ export default {
     },
     data() {
         return {
-            activeIndex: '1',
+            activeIndex: 'top-headline',
             categories: []
         }
     },
     methods: {
         handleSelect(key, keyPath) {
-            console.log(key, keyPath)
+            eventBus.$emit('loadNews', { newssource: key })
+            console.log({ newssource: key })
         }
     }
 }

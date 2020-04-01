@@ -6,10 +6,19 @@ import './assets/tailwind.css'
 import './plugins/element.js'
 import VueStringFilter from 'vue-string-filter'
 import store from './store'
+import dotenv from 'dotenv'
+import moment from 'vue-moment'
+import truncatefilter from 'vue-truncate-filter'
+
+dotenv.config()
+Vue.use(moment)
+Vue.use(truncatefilter)
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'http://news-server.test:8080/'
+axios.defaults.baseURL = process.env.VUE_APP_NEWSAPIBASE
 Vue.use(VueStringFilter)
+
+export const eventBus = new Vue()
 
 new Vue({
     router,

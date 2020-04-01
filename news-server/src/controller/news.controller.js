@@ -23,6 +23,26 @@ module.exports = {
                 res.json(err).status(500)
             })
     },
+    topheadlines: (req, res) => {
+        if (null == req.query.q) {
+            //IF query is not defined, get global news
+            params = { q: 'global', ...req.query }
+        } else {
+            params = req.query
+        }
+        console.log(params)
+        axios
+            .get(
+                `https://newsapi.org/v2/top-headlines?language=en&apiKey=${process.env.NEWS_API_KEY}`,
+                { params: params }
+            )
+            .then(response => {
+                res.send({ query: req.params.q, data: response.data })
+            })
+            .catch(err => {
+                res.json(err).status(500)
+            })
+    },
 
     sources: (req, res) => {
         endpoint = `https://newsapi.org/v2/sources?apiKey=${process.env.NEWS_API_KEY}`

@@ -2,14 +2,14 @@ const express = require('express')
 const {
     index,
     sources,
-    sourcecategories,
-    sourcecountries,
-    sourcedetails
+    sourcedetails,
+    topheadlines
 } = require('../controller/news.controller')
 const router = express.Router()
 
 router.get('/sources', sources)
 router.get('/sourcedetails', sourcedetails)
+router.get('/topheadlines', topheadlines)
 
 router.get('/', index)
 
