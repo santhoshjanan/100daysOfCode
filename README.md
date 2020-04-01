@@ -22,3 +22,7 @@ Next thing I did is to create a Vue application. Added:
 Set up a component for nav bar - this will get the list of categories from news-server api #3.
 
 Thats where I stopped for the night.
+
+## Day 3 - 1-Apr-2020
+Added one more endpoint to get top headlines in the server part. News block component developed and hooked with the API. 
+![Screenshot of news app](https://github.com/santhoshjanan/100daysOfCode/raw/master/screenshots/hdoc-news-ss.png)
