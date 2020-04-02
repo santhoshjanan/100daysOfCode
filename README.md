@@ -24,5 +24,7 @@ Set up a component for nav bar - this will get the list of categories from news-
 Thats where I stopped for the night.
 
 ## Day 3 - 1-Apr-2020
-Added one more endpoint to get top headlines in the server part. News block component developed and hooked with the API. 
+Added one more endpoint to get top headlines in the server part. News block component developed and hooked with the API.
+
+Unsed an eventBus to communicate between sibling components.
 ![Screenshot of news app](https://github.com/santhoshjanan/100daysOfCode/raw/master/screenshots/hdoc-news-ss.png)
