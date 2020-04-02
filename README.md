@@ -28,3 +28,8 @@ Added one more endpoint to get top headlines in the server part. News block comp
 
 Unsed an eventBus to communicate between sibling components.
 ![Screenshot of news app](https://github.com/santhoshjanan/100daysOfCode/raw/master/screenshots/hdoc-news-ss.png)
+
+## Day 4 - 2-Apr-2020
+Today started a new nodejs project to start working with data - CRUD operations. May be I got a bit over excited; or got over confident. I thought of adding one additional learning point- NoSQL. Initially I thought working with Javascript will be a paradigm shift. But now I feel, Javascript is ok. But a brain which had worked for a long time with RDBMS, is finding it real tough to wrap around the NoSQL paradigm. One step at a time, I am learning it.
+
+Today, I created a nodejs/express application. Set up my first mongodb instance in Atlas cloud. Created a model. Added a listing, create user and login routes in the controller. Later, added a middleware in the model with pre-save. So that, the password gets hashed when it is saved. Excited for tomorrow and the weekend.
