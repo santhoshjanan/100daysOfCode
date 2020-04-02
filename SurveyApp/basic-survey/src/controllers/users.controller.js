@@ -18,7 +18,7 @@ module.exports = {
         const data = new User({
             name: req.body.name,
             email: req.body.email,
-            password: passwordHash.generate(req.body.password)
+            password: req.body.password
         })
         data.save()
             .then(item => {
@@ -36,11 +36,12 @@ module.exports = {
             email: req.body.email
         })
             .then(data => {
+                authenticated = passwordHash.verify(
+                    req.body.password,
+                    data.password
+                )
                 res.json({
-                    authenticated: passwordHash.verify(
-                        req.body.password,
-                        data.password
-                    ),
+                    authenticated,
                     data
                 })
             })
