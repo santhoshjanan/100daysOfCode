@@ -33,3 +33,6 @@ Unsed an eventBus to communicate between sibling components.
 Today started a new nodejs project to start working with data - CRUD operations. May be I got a bit over excited; or got over confident. I thought of adding one additional learning point- NoSQL. Initially I thought working with Javascript will be a paradigm shift. But now I feel, Javascript is ok. But a brain which had worked for a long time with RDBMS, is finding it real tough to wrap around the NoSQL paradigm. One step at a time, I am learning it.
 
 Today, I created a nodejs/express application. Set up my first mongodb instance in Atlas cloud. Created a model. Added a listing, create user and login routes in the controller. Later, added a middleware in the model with pre-save. So that, the password gets hashed when it is saved. Excited for tomorrow and the weekend.
+
+## Day 5 - 3-Apr-2020
+Nope! Not a great day with code. I am struggling with handling JWT. May be I am missing a little thing. After I close my HDoC today, I will be watching some videos on how experts do authentication in express and read some more. Weekend must be some more easier. Happy weekend.
