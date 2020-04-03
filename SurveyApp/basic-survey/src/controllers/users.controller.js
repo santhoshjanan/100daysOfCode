@@ -1,7 +1,5 @@
-const express = require('express')
-const axios = require('axios')
 const passwordHash = require('password-hash')
-
+const jwt = require('jsonwebtoken')
 const User = require('../models/user.model')
 
 module.exports = {
@@ -40,12 +38,25 @@ module.exports = {
                     req.body.password,
                     data.password
                 )
+
+                console.log(data.comparePassword(req.body.password))
+                jwt.sign(
+                    { data },
+                    process.env.API_SECRET,
+                    { expiresIn: '1h' },
+                    function(err, token) {
+                        // console.log(token)
+                        req.token = token
+                    }
+                )
                 res.json({
-                    authenticated,
+                    // authenticated,
+                    token: req.token,
                     data
                 })
             })
             .catch(err => {
+                console.log(err)
                 res.status(500).json(err)
             })
     }
