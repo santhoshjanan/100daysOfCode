@@ -7,7 +7,16 @@ module.exports = {
     index: (req, res) => {
         User.find()
             .then(data => {
-                res.json({ data, auth: req.auth })
+                res.json({ data })
+            })
+            .catch(err => {
+                res.status(500).json(err)
+            })
+    },
+    me: (req, res) => {
+        User.find()
+            .then(data => {
+                res.json({ me: req.auth.data })
             })
             .catch(err => {
                 res.status(500).json(err)
@@ -35,23 +44,26 @@ module.exports = {
             email: req.body.email
         })
             .then(data => {
-                console.log(data)
                 authenticated = bcrypt.compareSync(
                     req.body.password,
                     data.password
                 )
 
-                jwt.sign(
-                    { data },
-                    process.env.API_SECRET,
-                    { expiresIn: '1h' },
-                    function(err, token) {
-                        res.json({
-                            token,
-                            data
-                        })
-                    }
-                )
+                if (authenticated) {
+                    jwt.sign(
+                        { data },
+                        process.env.API_SECRET,
+                        { expiresIn: '1h' },
+                        function(err, token) {
+                            res.json({
+                                token,
+                                data
+                            })
+                        }
+                    )
+                } else {
+                    res.sendStatus(403)
+                }
             })
             .catch(err => {
                 console.log(err)
