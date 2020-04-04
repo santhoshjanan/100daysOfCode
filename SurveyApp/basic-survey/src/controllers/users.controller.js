@@ -14,12 +14,30 @@ module.exports = {
             })
     },
     me: (req, res) => {
-        User.find()
+        User.findOne(req.auth.data)
             .then(data => {
-                res.json({ me: req.auth.data })
+                res.json({ me: data })
             })
             .catch(err => {
                 res.status(500).json(err)
+            })
+    },
+    updateProfile: (req, res) => {
+        User.findOne(req.auth.data)
+            .then(data => {
+                if (req.body.name) data.name = req.body.name
+                if (req.body.email) data.email = req.body.email
+                if (req.body.password) data.password = req.body.password
+                data.save()
+                    .then(item => {
+                        res.status(201).json({ me: item })
+                    })
+                    .catch(err => {
+                        res.json(err)
+                    })
+            })
+            .catch(err => {
+                res.sendStatus(400)
             })
     },
     create: (req, res) => {
