@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
 // const passwordHash = require('password-hash')
 const bcrypt = require('bcrypt')
-const saltRounds = 10
+const saltRounds = process.env.SALT_ROUNDS
+
 const UserModel = new mongoose.Schema(
     {
         name: { type: String, required: true, index: true },
