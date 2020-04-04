@@ -36,3 +36,8 @@ Today, I created a nodejs/express application. Set up my first mongodb instance 
 
 ## Day 5 - 3-Apr-2020
 Nope! Not a great day with code. I am struggling with handling JWT. May be I am missing a little thing. After I close my HDoC today, I will be watching some videos on how experts do authentication in express and read some more. Weekend must be some more easier. Happy weekend.
+
+## Day 6 - 4-Apr-2020
+Finally, I was able to get around JWT. On successful authentication, signed the user object along with an expiry date and sent it back to the client. On subsequent actions, in a middleware, I decode the JWT token and store it within the request object, so that the "next" function which uses the request can identify who is requesting it.
+
+In total, I got a better understanding of JWT, wrote a middleware for token verification and used it to protect my routes. I call it a fruitful day of code.
