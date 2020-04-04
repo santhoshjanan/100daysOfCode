@@ -1,16 +1,17 @@
 const mongoose = require('mongoose')
-const passwordHash = require('password-hash')
-
+// const passwordHash = require('password-hash')
+const bcrypt = require('bcrypt')
+const saltRounds = 10
 const UserModel = new mongoose.Schema(
     {
         name: { type: String, required: true, index: true },
         email: { type: String, required: true, unique: true },
-        password: { type: String, required: true, select: false }
+        password: { type: String, required: true }
     },
     { timestamps: true }
 )
 UserModel.pre('save', function(next) {
-    this.password = passwordHash.generate(this.password)
+    this.password = bcrypt.hashSync(this.password, saltRounds)
     next()
 })
 

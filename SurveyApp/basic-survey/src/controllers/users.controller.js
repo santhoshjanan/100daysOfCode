@@ -1,12 +1,13 @@
-const passwordHash = require('password-hash')
 const jwt = require('jsonwebtoken')
 const User = require('../models/user.model')
+const bcrypt = require('bcrypt')
+const saltRounds = 10
 
 module.exports = {
     index: (req, res) => {
         User.find()
             .then(data => {
-                res.json(data)
+                res.json({ data, auth: req.auth })
             })
             .catch(err => {
                 res.status(500).json(err)
@@ -34,26 +35,23 @@ module.exports = {
             email: req.body.email
         })
             .then(data => {
-                authenticated = passwordHash.verify(
+                console.log(data)
+                authenticated = bcrypt.compareSync(
                     req.body.password,
                     data.password
                 )
 
-                console.log(data.comparePassword(req.body.password))
                 jwt.sign(
                     { data },
                     process.env.API_SECRET,
                     { expiresIn: '1h' },
                     function(err, token) {
-                        // console.log(token)
-                        req.token = token
+                        res.json({
+                            token,
+                            data
+                        })
                     }
                 )
-                res.json({
-                    // authenticated,
-                    token: req.token,
-                    data
-                })
             })
             .catch(err => {
                 console.log(err)
