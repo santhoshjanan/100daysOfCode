@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 // const passwordHash = require('password-hash')
 const bcrypt = require('bcrypt')
-const saltRounds = process.env.SALT_ROUNDS
+const saltRounds = parseInt(process.env.SALT_ROUNDS)
 
 const UserModel = new mongoose.Schema(
     {
