@@ -41,3 +41,6 @@ Nope! Not a great day with code. I am struggling with handling JWT. May be I am 
 Finally, I was able to get around JWT. On successful authentication, signed the user object along with an expiry date and sent it back to the client. On subsequent actions, in a middleware, I decode the JWT token and store it within the request object, so that the "next" function which uses the request can identify who is requesting it.
 
 In total, I got a better understanding of JWT, wrote a middleware for token verification and used it to protect my routes. I call it a fruitful day of code.
+
+## Day 7 - 5-Apr-2020
+Started working on adding Survey and questions to the system. Next will be adding answers with reference to the survey objects. Looks like this needs more reading on Mongoose to understand how relationships work. A slow day on HDoC.
