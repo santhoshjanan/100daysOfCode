@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const SurveyModel = new mongoose.Schema(
     {
@@ -17,7 +18,11 @@ const SurveyModel = new mongoose.Schema(
                 answers: [],
             },
         ],
-        createdBy: { type: String, required: true },
+        createdBy: {
+            type: Schema.Types.ObjectId,
+            ref: 'User',
+            required: true,
+        },
     },
     { timestamps: true }
 );

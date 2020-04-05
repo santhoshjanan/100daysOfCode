@@ -11,7 +11,10 @@ module.exports = {
             });
     },
     create: (req, res) => {
-        const data = new Survey(req.body);
+        $survey = req.body;
+        $survey.createdBy = req.auth.data;
+
+        const data = new Survey($survey);
         data.save()
             .then((item) => {
                 res.json({
