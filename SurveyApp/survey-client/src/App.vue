@@ -1,36 +1,28 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
+    <div id="app" class="h-screen bg-green-400">
+        <router-view></router-view>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    name: 'app',
+    components: {},
+    computed: { ...mapGetters(['token', 'userDetails', 'authenticated']) },
+    methods: {
+        ...mapActions(['AUTOLOGIN']),
+    },
+    created() {
+        this.AUTOLOGIN()
+            .then(() => {
+                if (this.$router.currentRoute.path !== '/dashboard')
+                    this.$router.push('/dashboard');
+            })
+            .catch((err) => {});
+    },
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
