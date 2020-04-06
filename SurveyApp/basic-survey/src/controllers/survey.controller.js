@@ -1,8 +1,8 @@
 const Survey = require('../models/survey.model');
 
 module.exports = {
-    index: (req, res) => {
-        Survey.find()
+    index: async (req, res) => {
+        await Survey.find()
             .then((data) => {
                 res.json({ data });
             })
@@ -10,12 +10,13 @@ module.exports = {
                 res.status(500).json(err);
             });
     },
-    create: (req, res) => {
+    create: async (req, res) => {
         $survey = req.body;
         $survey.createdBy = req.auth.data;
 
         const data = new Survey($survey);
-        data.save()
+        await data
+            .save()
             .then((item) => {
                 res.json({
                     result: 'Survey saved',
