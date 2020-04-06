@@ -44,3 +44,8 @@ In total, I got a better understanding of JWT, wrote a middleware for token veri
 
 ## Day 7 - 5-Apr-2020
 Started working on adding Survey and questions to the system. Next will be adding answers with reference to the survey objects. Looks like this needs more reading on Mongoose to understand how relationships work. A slow day on HDoC.
+
+## Day 8 - 6-Apr-2020
+Realized that I was doing all mongo related operations synchronously. Refactored all those to async operations. Meanwhile, spun up a vue application for frontend of survey app. Object is to better implement a state management part. A couple of good learning on how to modularize Vuex. And I was earlier struggling with handling how to navigate from one route to another based on state. Now, I think I understand the basics. In upcoming days, I need to revalidate myself and fix it. One important thing coming up is, routes with guards. Hopefully, tomorrow. One thing I am happy with today is, the lifecycle of Vuex is now clear.
+
+![Data flow in Vuex](https://raw.githubusercontent.com/santhoshjanan/100daysOfCode/master/screenshots/Vuex.png)
