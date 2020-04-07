@@ -49,3 +49,13 @@ Started working on adding Survey and questions to the system. Next will be addin
 Realized that I was doing all mongo related operations synchronously. Refactored all those to async operations. Meanwhile, spun up a vue application for frontend of survey app. Object is to better implement a state management part. A couple of good learning on how to modularize Vuex. And I was earlier struggling with handling how to navigate from one route to another based on state. Now, I think I understand the basics. In upcoming days, I need to revalidate myself and fix it. One important thing coming up is, routes with guards. Hopefully, tomorrow. One thing I am happy with today is, the lifecycle of Vuex is now clear.
 
 ![Data flow in Vuex](https://raw.githubusercontent.com/santhoshjanan/100daysOfCode/master/screenshots/Vuex.png)
+
+## Day 9 - 7-Apr-2020
+Learned a couple of things: 
+1. How to get nested routing.
+2. How to navigate/route using element ui side nav bar.
+
+Pending items:
+1. Guarded routes
+2. UI State management
+3. Form building
