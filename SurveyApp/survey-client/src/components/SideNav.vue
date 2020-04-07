@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-bind:class="{ 'width-300': !isCollapse }">
         <div v-bind:class="{ 'width-300': !isCollapse }">
             <el-radio-group v-model="isCollapse" style="margin-bottom: 0px;">
                 <el-radio-button :label="true">collapse</el-radio-button>
@@ -12,6 +12,7 @@
             @open="handleOpen"
             @close="handleClose"
             :collapse="isCollapse"
+            :router="true"
         >
             <el-submenu index="1">
                 <template slot="title">
@@ -20,8 +21,10 @@
                 </template>
                 <el-menu-item-group>
                     <span slot="title">Group One</span>
-                    <el-menu-item index="1-1">item one</el-menu-item>
-                    <el-menu-item index="1-2">item two</el-menu-item>
+                    <el-menu-item index="/dashboard">Survey list</el-menu-item>
+                    <el-menu-item index="/dashboard/survey/create"
+                        >Create Survey</el-menu-item
+                    >
                 </el-menu-item-group>
             </el-submenu>
             <el-submenu index="2">
@@ -51,13 +54,33 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
+
 export default {
     data() {
         return {
-            isCollapse: true,
+            isCollapse: false,
         };
     },
+    computed: {
+        ...mapGetters([
+            'token',
+            'userDetails',
+            'authenticated',
+            'collapseStateChanged',
+        ]),
+    },
+    mounted() {
+        this.isCollapse = this.collapseStateChanged;
+    },
+    watch: {
+        isCollapse(collapseStateChanged) {
+            this.UIEXPANDSIDENAV(!collapseStateChanged);
+        },
+    },
     methods: {
+        ...mapActions(['UIEXPANDSIDENAV']),
+
         handleOpen(key, keyPath) {
             console.log(key, keyPath);
         },

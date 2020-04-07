@@ -22,6 +22,24 @@ const routes = [
     {
         path: '/dashboard',
         name: 'Dashboard',
+        children: [
+            {
+                path: '',
+                name: 'Dashboard-home',
+                component: () =>
+                    import(
+                        /* webpackChunkName: "survey" */ '../components/Survey/SurveyList.vue'
+                    ),
+            },
+            {
+                path: '/dashboard/survey/create',
+                name: 'Dashboard-survey-create',
+                component: () =>
+                    import(
+                        /* webpackChunkName: "survey" */ '../components/Survey/SurveyCreate.vue'
+                    ),
+            },
+        ],
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.

@@ -2,6 +2,7 @@
     <div>
         <Header></Header>
         <SideNav></SideNav>
+        <router-view></router-view>
     </div>
 </template>
 
