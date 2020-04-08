@@ -1,8 +1,14 @@
 <template>
     <div>
         <Header></Header>
-        <SideNav></SideNav>
-        <router-view></router-view>
+        <el-container>
+            <el-aside>
+                <SideNav></SideNav>
+            </el-aside>
+            <el-main class="w-full bg-green-400 -ml-12">
+                <router-view></router-view>
+            </el-main>
+        </el-container>
     </div>
 </template>
 

@@ -1,17 +1,17 @@
 <template>
-    <div v-bind:class="{ 'width-300': !isCollapse }">
-        <div v-bind:class="{ 'width-300': !isCollapse }">
+    <div>
+        <!-- <div>
             <el-radio-group v-model="isCollapse" style="margin-bottom: 0px;">
                 <el-radio-button :label="true">collapse</el-radio-button>
                 <el-radio-button :label="false">expand</el-radio-button>
             </el-radio-group>
-        </div>
+        </div> -->
         <el-menu
             default-active="2"
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose"
-            :collapse="isCollapse"
+            :collapse="false"
             :router="true"
         >
             <el-submenu index="1">
@@ -96,12 +96,15 @@ export default {
     min-height: 100vh;
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-    width: 300px;
+    width: 250px;
     min-height: 100vh;
 }
 .width-300 {
     width: 300px;
     background: #fff;
     transition: 0.5s ease-in;
+}
+.el-menu {
+    border: 0px;
 }
 </style>
