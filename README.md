@@ -65,3 +65,6 @@ Slow day! Could clean up the dashboard page. Started builing the form for create
 
 ## Day 11 - 9-Apr-2020
 Today I didnt work on the existing projects. Instead I took a bunch of challenges in HackerRank. Solved 14 challenges and earned 3 stars in an hour. Let me stop for the day :)
+
+## Day 12 - 10-Apr-2020
+Today, successfully made crude inserts from my client to mongodb via the service. Need to implement proper sanitation, validation and cleanup codes. Plan for tomorrow. Also, a listing page. A bigger punch coming is, I need to parse the correct question types into proper survey pages.
