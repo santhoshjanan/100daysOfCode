@@ -59,3 +59,9 @@ Pending items:
 1. Guarded routes
 2. UI State management
 3. Form building
+
+## Day 10 - 8-Apr-2020
+Slow day! Could clean up the dashboard page. Started builing the form for create survey. Need to find out how to dynamically add fields. At one point in time I was doubtful if I made a wrong choice by taking Element UI. Then yet, there are thousands already using that framework without any issues. Why should not I! So, here I am pushing it further...
+
+## Day 11 - 9-Apr-2020
+Today I didnt work on the existing projects. Instead I took a bunch of challenges in HackerRank. Solved 14 challenges and earned 3 stars in an hour. Let me stop for the day :)
