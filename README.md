@@ -68,3 +68,6 @@ Today I didnt work on the existing projects. Instead I took a bunch of challenge
 
 ## Day 12 - 10-Apr-2020
 Today, successfully made crude inserts from my client to mongodb via the service. Need to implement proper sanitation, validation and cleanup codes. Plan for tomorrow. Also, a listing page. A bigger punch coming is, I need to parse the correct question types into proper survey pages.
+
+## Day 13 - 11-Apr-2020
+I continued my 10 days of Javascript challenge in HackerRank. Last few tasks were challenging. But pulled it off with a gold badge (first one in hacker rank). Now solving challenges in "Problem solving" challenges using javascript.
