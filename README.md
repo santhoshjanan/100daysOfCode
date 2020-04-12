@@ -71,3 +71,7 @@ Today, successfully made crude inserts from my client to mongodb via the service
 
 ## Day 13 - 11-Apr-2020
 I continued my 10 days of Javascript challenge in HackerRank. Last few tasks were challenging. But pulled it off with a gold badge (first one in hacker rank). Now solving challenges in "Problem solving" challenges using javascript.
+
+## Day 14 - 12-Apr-2020
+
+Solved another challenge in HackerRank - Diagonal difference problem. Spent a lot of time in another challenge, 'Absolute difference' It passes most tests but times out on 3. Need to optimize the xode to handle huge arrays.
