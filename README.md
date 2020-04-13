@@ -75,3 +75,9 @@ I continued my 10 days of Javascript challenge in HackerRank. Last few tasks wer
 ## Day 14 - 12-Apr-2020
 
 Solved another challenge in HackerRank - Diagonal difference problem. Spent a lot of time in another challenge, 'Absolute difference' It passes most tests but times out on 3. Need to optimize the xode to handle huge arrays.
+
+## Day 15 - 13-Apr-2020
+
+Again, HackerRank day. The reason, I have turned to HackerRank these days is, I feel, I need to strengthen my fundamentals. And found the exercises in HackerRank best fit for flexing my Javascript muscles.
+
+Today I earned Two stars in Problem Solving, with Javascript.
