@@ -81,3 +81,7 @@ Solved another challenge in HackerRank - Diagonal difference problem. Spent a lo
 Again, HackerRank day. The reason, I have turned to HackerRank these days is, I feel, I need to strengthen my fundamentals. And found the exercises in HackerRank best fit for flexing my Javascript muscles.
 
 Today I earned Two stars in Problem Solving, with Javascript.
+
+## Day 16 - 14-Apr-2020
+
+For a change, I was on Codewars today. Earned almoat 100 points and reached 6kyū. 
