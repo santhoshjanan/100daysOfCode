@@ -85,3 +85,6 @@ Today I earned Two stars in Problem Solving, with Javascript.
 ## Day 16 - 14-Apr-2020
 
 For a change, I was on Codewars today. Earned almoat 100 points and reached 6kyū. 
+
+## Dat 17 - 17-Apr-2020
+I was trying to help a lot of people in StackOverflow today. Over last 3 days, I raised my reputation from 92 to 307 - something which I never expected. For a break from Javascript, I started a 10hr course on Flutter today. Reason is, I got a free course :) Why wasting a good chance to learn something new?!
