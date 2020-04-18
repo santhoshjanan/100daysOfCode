@@ -86,5 +86,8 @@ Today I earned Two stars in Problem Solving, with Javascript.
 
 For a change, I was on Codewars today. Earned almoat 100 points and reached 6kyū. 
 
-## Dat 17 - 17-Apr-2020
+## Day 17 - 17-Apr-2020
 I was trying to help a lot of people in StackOverflow today. Over last 3 days, I raised my reputation from 92 to 307 - something which I never expected. For a break from Javascript, I started a 10hr course on Flutter today. Reason is, I got a free course :) Why wasting a good chance to learn something new?!
+
+## Day 18 - 18-Apr-2020
+Anyone with a bit of good CSS knowledge and "Some" programming language can become a mobile app developer with Flutter. It is inspiring.I was able to create a few small stateless applications. But looking forward for some awesome exercises with flutter!
