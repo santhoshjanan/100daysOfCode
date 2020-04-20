@@ -91,3 +91,6 @@ I was trying to help a lot of people in StackOverflow today. Over last 3 days, I
 
 ## Day 18 - 18-Apr-2020
 Anyone with a bit of good CSS knowledge and "Some" programming language can become a mobile app developer with Flutter. It is inspiring.I was able to create a few small stateless applications. But looking forward for some awesome exercises with flutter!
+
+## Day 19 - 19-Apr-2020
+Continued with my flutter classes. Learned about the column, Row layout mechanisms. Tomorrow, I will be doing first application - like my profile. All from the AppBrewery's lessons.
