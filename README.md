@@ -97,8 +97,10 @@ Continued with my flutter classes. Learned about the column, Row layout mechanis
 
 ## Day 20 - 20-Apr-2020
 Made my first android app, that is giving a feeling of satisfaction! No functionality nothing. But I feel good building this. I flexed my #flutter muscles with the  layout mechanisms. I am thrilled to look forward for stateful apps!
+
 ![Screenshot of simple layout app](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/simplelayout.png)
 
 ## Day 21 - 21-Apr-2020
 Enter the world of statefulness. Started learning stateful widgets. Created a learning app which will randomize the faces of two dice.
+
 ![Screenshot of Dicee app](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/Dicee.png)
