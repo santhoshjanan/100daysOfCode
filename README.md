@@ -104,3 +104,22 @@ Made my first android app, that is giving a feeling of satisfaction! No function
 Enter the world of statefulness. Started learning stateful widgets. Created a learning app which will randomize the faces of two dice.
 
 ![Screenshot of Dicee app](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/Dicee.png)
+
+## Day 22 - 16-May-2020
+
+For last few days, I was not able to update status on #100DaysOfCode. But, I was doing something towards that. Just that, there was nothing to show. So, today, I have something that can be called as #day22.
+
+Participated in FlutterKerala's weekly challenge. And finished the challenge with a bare minimum application (Dont know if I can call it an MVP). [Repository](https://github.com/santhoshjanan/WeeklyChallenges)
+
+This is a 
+@FlutterDev
+ app. I have been trying to get a hold of it. 
+
+Questions and answers are provided by: 
+http://mocky.io/v2/5ebd2f5f31000018005b117f
+
+
+Screenshots:
+![screenshot | width=100](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz1.jpg)
+![screenshot | width=100](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz2.jpg)
+![screenshot | width=100](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz3.jpg)
