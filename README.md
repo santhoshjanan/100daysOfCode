@@ -121,6 +121,6 @@ http://mocky.io/v2/5ebd2f5f31000018005b117f
 
 Screenshots:
 
-![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz1.jpg  | width=30)
-![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz2.jpg  | width=30)
-![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz3.jpg  | width=30)
+![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz1.jpg)
+![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz2.jpg)
+![screenshot](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz3.jpg)
