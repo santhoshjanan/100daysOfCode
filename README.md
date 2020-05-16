@@ -120,6 +120,7 @@ http://mocky.io/v2/5ebd2f5f31000018005b117f
 
 
 Screenshots:
-![screenshot | width=100](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz1.jpg)
-![screenshot | width=100](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz2.jpg)
-![screenshot | width=100](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz3.jpg)
+
+![screenshot | width=30](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz1.jpg)
+![screenshot | width=30](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz2.jpg)
+![screenshot | width=30](https://github.com/santhoshjanan/100daysOfCode/blob/master/screenshots/quiz3.jpg)
